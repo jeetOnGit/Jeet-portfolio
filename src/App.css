@@ -70,6 +70,6 @@ img{
 }
 .project{
     background-image: url('../public/images/demo.jpg');
-    background-size: cover;
+    background-repeat: no-repeat;
 }
 

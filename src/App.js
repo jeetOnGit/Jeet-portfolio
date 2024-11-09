@@ -7,14 +7,14 @@ function App() {
   return (
     <div className="App text-[#1e1e1e]">
       <header>
-        <div className="container mx-auto">
+        <div className="container mx-auto max-[520px]:px-2">
           <nav className="flex justify-between items-center py-5">
             <div className="logo">
               <div className="logoCircle"></div>
             </div>
             <div className="quickAction flex items-center gap-6">
               <h5 className="hover:text-[#7B66EE] hover:cursor-pointer">
-                Resume
+                <Link to='docs/jeet-resume.pdf' target="_blank" download>Resume</Link>
               </h5>
 
               <Button className="hover:bg-[#7B66EE] hover:text-white">
@@ -26,7 +26,7 @@ function App() {
       </header>
 
       <main>
-        <div className="container mx-auto">
+        <div className="container mx-auto max-[520px]:px-2">
           <section className="heroSection flex flex-col justify-between py-5  text-center">
             <div className="lightText">
               <p>Hey folks!</p>
@@ -43,14 +43,14 @@ function App() {
               <p>
                 For <span className="text-[#7B66EE]">Passionate</span> projects,
                 Let's <Link className="text-[#7B66EE]">connect</Link>
-                <i class="fa-solid fa-right-long" />
+                {/* <i class="fa-solid fa-right-long" /> */}
               </p>
             </div>
           </section>
         </div>
 
         <section className="aboutSectionWrapper bg-[#1e1e1e] py-9">
-          <div className="container mx-auto">
+          <div className="container mx-auto max-[520px]:px-2">
             <div className="aboutSection flex justify-between items-center max-[698px]:flex-col  max-[698px]:gap-5">
               <div className="aboutImg w-[300px] h-[400px] bg-[#fff] rounded-lg max-[420px]:w-[150px] max-[420px]:h-[200px]"></div>
               <div className="aboutDesc text-white w-[50%] text-end max-[698px]:text-center  max-[420px]:w-[80%]">
@@ -69,35 +69,41 @@ function App() {
           </div>
         </section>
 
-        <section className="skillsWrapper py-12 relative">
-          <div className="container mx-auto py-[20%]">
+        <section className="skillsWrapper py-9 relative">
+        <div className="projectHeading text-center mb-12">
+              <h2 className="text-[2rem] font-semibold">Skills</h2>
+            </div> 
+          <div className="container mx-auto py-[20%] max-[520px]:px-2">
+
+            
+
             <div className="skills grid grid-cols-2 gap-x-[8.4rem] gap-y-[0.85rem] min-[1200px]:gap-x-[13.4rem] w-48 rotate-45 mx-auto absolute top-1/2 left-1/2 transform -translate-x-3/4 -translate-y-1/2 max-[1000px]:rotate-0 ">
-              <div className="skillBox w-[200px] h-[200px] bg-[#7B66EE] rotate-anti-45 max-[1200px]:w-[150px] max-[1200px]:h-[150px] max-[678px]:w-[100px] max-[678px]:h-[100px] relative">
-                <ul className="absolute rotate-[315deg] bottom-[125%] right-[30%]">
+              <div className="skillBox w-[200px] h-[200px] bg-[#7B66EE] rotate-anti-45 max-[1200px]:w-[150px] max-[1200px]:h-[150px] max-[678px]:w-[100px] max-[678px]:h-[100px] relative max-[1000px]:w-[10px]">
+                <ul className="absolute rotate-[315deg] bottom-[125%] right-[30%] max-[1000px]:rotate-0 max-[1000px]:left-4 max-[1000px]:top-0">
                   <li>HTML</li>
                   <li>CSS</li>
                   <li>Javascript</li>
                 </ul>
               </div>
 
-              <div className="skillBox w-[200px] h-[200px] bg-[#1e1e1e] rotate-anti-45 max-[1200px]:w-[150px] max-[1200px]:h-[150px] max-[678px]:w-[100px] max-[678px]:h-[100px] relative">
-                <ul className="absolute rotate-[315deg] bottom-[65%] right-[-87%]">
+              <div className="skillBox w-[200px] h-[200px] bg-[#1e1e1e] rotate-anti-45 max-[1200px]:w-[150px] max-[1200px]:h-[150px] max-[678px]:w-[100px] max-[678px]:h-[100px] relative max-[1000px]:w-[10px]">
+                <ul className="absolute rotate-[315deg] bottom-[65%] right-[-87%] max-[1000px]:rotate-0 max-[1000px]:left-4 max-[1000px]:top-0">
                   <li>HTML</li>
                   <li>CSS</li>
                   <li>Javascript</li>
                 </ul>
               </div>
 
-              <div className="skillBox w-[200px] h-[200px] bg-[#1e1e1e] rotate-anti-45 max-[1200px]:w-[150px] max-[1200px]:h-[150px] max-[678px]:w-[100px] max-[678px]:h-[100px] relative">
-                <ul className="absolute rotate-[315deg] top-[39%] right-[142%]">
+              <div className="skillBox w-[200px] h-[200px] bg-[#1e1e1e] rotate-anti-45 max-[1200px]:w-[150px] max-[1200px]:h-[150px] max-[678px]:w-[100px] max-[678px]:h-[100px] relative max-[1000px]:w-[10px]">
+                <ul className="absolute rotate-[315deg] top-[39%] right-[142%] max-[1000px]:rotate-0 max-[1000px]:left-4 max-[1000px]:top-0">
                   <li>HTML</li>
                   <li>CSS</li>
                   <li>Javascript</li>
                 </ul>
               </div>
 
-              <div className="skillBox w-[200px] h-[200px] bg-[#7B66EE] rotate-anti-45 max-[1200px]:w-[150px] max-[1200px]:h-[150px] max-[678px]:w-[100px] max-[678px]:h-[100px] relative">
-                <ul className="absolute rotate-[315deg] bottom-[-138%] right-[77%]">
+              <div className="skillBox w-[200px] h-[200px] bg-[#7B66EE] rotate-anti-45 max-[1200px]:w-[150px] max-[1200px]:h-[150px] max-[678px]:w-[100px] max-[678px]:h-[100px] relative max-[1000px]:w-[10px]">
+                <ul className="absolute rotate-[315deg] bottom-[-138%] right-[77%] max-[1000px]:rotate-0 max-[1000px]:left-4 max-[1000px]:top-0">
                   <li>HTML</li>
                   <li>CSS</li>
                   <li>Javascript</li>
@@ -111,16 +117,16 @@ function App() {
         </section>
 
         <section className="projectSectionWrapper py-12">
-          <div className="container mx-auto">
+          <div className="container mx-auto max-[520px]:px-2">
             <div className="projectHeading text-center">
               <h2 className="text-[2rem] font-semibold">Projects</h2>
             </div>
 
             <div className="porjects flex justify-between flex-wrap py-9 gap-7 max-[678px]:justify-center">
-              <div className="project w-[400px] h-[250px] bg-[#1e1e1e] rounded-lg"></div>
-              <div className="project w-[400px] h-[250px] bg-[#1e1e1e] rounded-lg"></div>
-              <div className="project w-[400px] h-[250px] bg-[#1e1e1e] rounded-lg"></div>
-              <div className="project w-[400px] h-[250px] bg-[#1e1e1e] rounded-lg"></div>
+              <div className="project w-[350px] h-[200px] bg-[#1e1e1e] rounded-lg border bg-contain max-[520px]:bg-cover"></div>
+              <div className="project w-[350px] h-[200px] bg-[#1e1e1e] rounded-lg border bg-contain max-[520px]:bg-cover"></div>
+              <div className="project w-[350px] h-[200px] bg-[#1e1e1e] rounded-lg border bg-contain max-[520px]:bg-cover"></div>
+              <div className="project w-[350px] h-[200px] bg-[#1e1e1e] rounded-lg border bg-contain max-[520px]:bg-cover"></div>
             </div>
             <div className="btn text-center">
               <Button className="bg-[#7B66EE] text-[#fff] hover:bg-transparent hover:text-[#1e1e1e]">
@@ -131,14 +137,14 @@ function App() {
         </section>
 
         <section className="timelineWrapper pt-12 pb-28">
-          <div className="container mx-auto">
+          <div className="container mx-auto max-[520px]:px-2">
             <div className="experienceHeading text-center mb-12">
               <h2 className="text-[2rem] font-semibold">Experience</h2>
             </div>
             <div className="timeline relative">
-              <div className="timelineBar absolute top-1/2 left-1/2 transform -translate-x-3/4 -translate-y-1/2 w-[1px] bg-[#1e1e1e] h-full"></div>
-              <div className="timelineContent flex flex-col gap-6 w-full">
-                <div className="experienceBox w-[40%] ">
+              <div className="timelineBar absolute top-1/2 left-1/2 transform -translate-x-3/4 -translate-y-1/2 w-[1px] bg-[#1e1e1e] h-full max-[520px]:left-0"></div>
+              <div className="timelineContent flex flex-col gap-6 w-full max-[520px]:ms-2">
+                <div className="experienceBox w-[40%] max-[520px]:w-full">
                   <h5 className="text-[1.25rem] font-semibold">
                     Demo Designation
                   </h5>
@@ -151,7 +157,7 @@ function App() {
                     Corporis, laboriosam necessitatibus?
                   </p>
                 </div>
-                <div className="experienceBox w-[40%] text-right self-end">
+                <div className="experienceBox w-[40%] text-right self-end max-[520px]:w-full max-[520px]:text-start">
                   <h5 className="text-[1.25rem] font-semibold">
                     Demo Designation
                   </h5>
@@ -171,11 +177,11 @@ function App() {
       </main>
 
       <footer className="bg-[#1e1e1e] py-10 text-white relative">
-        <div className="floatingDiv w-[50%] bg-[#7B66EE] px-6 absolute flex justify-around items-center py-7 rounded-lg left-1/2 -translate-x-1/2 top-[-20%]">
-          <h3 className="text-[1.4rem] me-5">
+        <div className="floatingDiv w-[60%] bg-[#7B66EE] px-6 absolute flex justify-around items-center py-7 rounded-lg left-1/2 -translate-x-1/2 top-[-20%] max-[520px]:w-[80%] max-[520px]:py-4 max-[520px]:top-[-14%]">
+          <h3 className="text-[1.4rem] me-5 max-[520px]:text-[0.75rem]">
             Want to discuss for next project?
           </h3>
-          <Button className="border border-[#fff] hover:bg-[#1e1e1e]">
+          <Button className="border border-[#fff] hover:bg-[#1e1e1e] max-[520px]:px-2 max-[520px]:text-[0.75rem]">
             Connect
           </Button>
         </div>
