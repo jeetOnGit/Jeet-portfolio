@@ -68,3 +68,8 @@ img{
     background-size: cover;
     background-position: center;
 }
+.project{
+    background-image: url('../public/images/demo.jpg');
+    background-size: cover;
+}
+
