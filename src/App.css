@@ -15,7 +15,7 @@ img{
     height: 50px;
     background-color: blanchedalmond;
     border-radius: 50%;
-    background-image: url(../public/images/avatar.jpg);
+    /* background-image: url(../public/images/pp.jpg); */
     background-size: cover;
 }
 .designer, .dev{
@@ -64,12 +64,12 @@ img{
 }
 
 .aboutImg{
-    background-image: url('../public/images/aboutImg.jpg');
+    /* background-image: url('../public/images/aboutImg.jpg'); */
     background-size: cover;
     background-position: center;
 }
-.project{
+/* .project{
     background-image: url('../public/images/demo.jpg');
     background-repeat: no-repeat;
 }
-
+ */
