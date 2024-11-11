@@ -12,7 +12,7 @@ function Projects() {
     },
     {
       projectName: "Airbnb clone",
-      bgImg: "images/demo.jpg",
+      bgImg: "images/demo.PNG",
       gitLink: "https://github.com/jeetOnGit/Airbnb",
       liveLink: "https://airbnb-frontend-0en8.onrender.com/",
       usedTools: ["HTML", "CSS", "JS", "React", "Express", "NodeJs", "MongoDB"],
@@ -26,7 +26,7 @@ function Projects() {
     },
     {
       projectName: "Login Page",
-      bgImg: "images/demo.jpg",
+      bgImg: "images/demo.PNG",
       gitLink: "https://github.com/jeetOnGit/sign-up-Page",
       liveLink: "https://architect-login.netlify.app/",
       usedTools: ["HTML", "CSS", "Javascript", "React"],
@@ -52,12 +52,13 @@ function Projects() {
       {projectDetails.map((project, index) => (
         <div
           key={index}
-          className="project w-[350px] h-[200px] bg-[#1e1e1e] rounded-lg border bg-contain max-[520px]:bg-cover relative group bg-no-repeat"
-          style={{
-            backgroundImage: `url(${project.bgImg})`,
-          }}
+          className="project w-[400px] h-[200px] overflow-hidden bg-[#1e1e1e] rounded-lg border bg-contain max-[520px]:bg-cover relative group bg-no-repeat"
+          // style={{
+          //   backgroundImage: `url(${project.bgImg})`,
+          // }}
         >
-          <div className="overlay absolute w-full h-full bg-black opacity-[0.9] rounded-lg hidden group-hover:block">
+          <iframe title="Website Preview" src={project.liveLink} className="w-[1400px] h-[1000px] scale-[0.3] transform origin-top-left pointer-events-none border-none" frameborder="0"></iframe>
+          <div className="overlay absolute w-full h-full top-0 bg-black opacity-[0.9] hidden rounded-lg  group-hover:block">
             <div className="flex flex-col items-center justify-center h-full gap-2">
             <ul className="flex justify-center items-center gap-5">
               <li>

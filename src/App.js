@@ -7,7 +7,7 @@ import Skills from "./Components/Skills";
 
 function App() {
   return (
-    <div className="App text-[#1e1e1e]">
+    <div className="App text-[#1e1e1e] bg-white">
       <header>
         <div className="container mx-auto max-[520px]:px-2">
           <nav className="flex justify-between items-center py-5">
@@ -43,13 +43,13 @@ function App() {
                 <h2 className="text-[3.5rem] max-[520px]:text-[1.5rem] font-semibold my-[10%] max-[520px]:my-[4%]">
                   <span className="designer max-[2000px]:before:hidden max-[2000px]:after:hidden">Designer,</span> <span className="text-[#7B66EE] dev max-[2000px]:before:hidden max-[2000px]:after:hidden">Frontend Developer</span> & <span className="explorer max-[2000px]:before:hidden max-[2000px]:after:hidden">Exploler</span>
                 </h2>
-                {/* <img src="images/hero.png" alt="" /> */}
+                
               </div>
 
               <div className="lightText">
                 <p>
                   For <span className="text-[#7B66EE]">Passionate</span> projects,
-                  Let's{" "}
+                  Let's
                   <Link
                     to="https://www.linkedin.com/in/connectwithjeet/"
                     target="_blank"
@@ -57,15 +57,13 @@ function App() {
                   >
                     connect
                   </Link>
-                  {/* <i class="fa-solid fa-right-long" /> */}
+                  
                 </p>
               </div>
             </div>
           </div>
         </section>
         
-          
-
         <section className="aboutSectionWrapper bg-[#1e1e1e] py-9">
           <div className="container mx-auto max-[520px]:px-2">
             <div className="aboutSection flex justify-between items-center max-[698px]:flex-col  max-[698px]:gap-5">
@@ -96,42 +94,11 @@ function App() {
             <h2 className="text-[2rem] font-semibold">Skills</h2>
           </div>
           <div className="container mx-auto max-[520px]:px-2">
-            <Skills />
+            <div className="skillContent">
+              <Skills />
+              
+            </div>
 
-            {/* <div className="skills grid grid-cols-2 gap-x-[8.4rem] gap-y-[0.85rem] min-[1200px]:gap-x-[13.4rem] w-48 rotate-45 mx-auto absolute top-1/2 left-1/2 transform -translate-x-3/4 -translate-y-1/2 max-[1000px]:rotate-0 ">
-              <div className="skillBox w-[200px] h-[200px] bg-[#7B66EE] rotate-anti-45 max-[1200px]:w-[150px] max-[1200px]:h-[150px] max-[678px]:w-[100px] max-[678px]:h-[100px] relative max-[1000px]:w-[10px]">
-                <ul className="absolute rotate-[315deg] bottom-[125%] right-[30%] max-[1000px]:rotate-0 max-[1000px]:left-4 max-[1000px]:top-0">
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>Javascript</li>
-                </ul>
-              </div>
-
-              <div className="skillBox w-[200px] h-[200px] bg-[#1e1e1e] rotate-anti-45 max-[1200px]:w-[150px] max-[1200px]:h-[150px] max-[678px]:w-[100px] max-[678px]:h-[100px] relative max-[1000px]:w-[10px]">
-                <ul className="absolute rotate-[315deg] bottom-[65%] right-[-87%] max-[1000px]:rotate-0 max-[1000px]:left-4 max-[1000px]:top-0">
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>Javascript</li>
-                </ul>
-              </div>
-
-              <div className="skillBox w-[200px] h-[200px] bg-[#1e1e1e] rotate-anti-45 max-[1200px]:w-[150px] max-[1200px]:h-[150px] max-[678px]:w-[100px] max-[678px]:h-[100px] relative max-[1000px]:w-[10px]">
-                <ul className="absolute rotate-[315deg] top-[39%] right-[142%] max-[1000px]:rotate-0 max-[1000px]:left-4 max-[1000px]:top-0">
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>Javascript</li>
-                </ul>
-              </div>
-
-              <div className="skillBox w-[200px] h-[200px] bg-[#7B66EE] rotate-anti-45 max-[1200px]:w-[150px] max-[1200px]:h-[150px] max-[678px]:w-[100px] max-[678px]:h-[100px] relative max-[1000px]:w-[10px]">
-                <ul className="absolute rotate-[315deg] bottom-[-138%] right-[77%] max-[1000px]:rotate-0 max-[1000px]:left-4 max-[1000px]:top-0">
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>Javascript</li>
-                </ul>
-              </div>
-
-            </div>  */}
           </div>
         </section>
 
