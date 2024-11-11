@@ -18,7 +18,7 @@ img{
     /* background-image: url(../public/images/pp.jpg); */
     background-size: cover;
 }
-.designer, .dev{
+.designer, .dev, .explorer{
     position: relative;
 }
 .designer::before{
@@ -28,12 +28,32 @@ img{
     right: 50%;
     left: 53%;
     bottom: -59%;
-    transform: translate(50%, -50%);
+    /* transform: translate(50%, -50%); */
     transform: rotate(90deg);
     font-weight: 200;
 }
 .designer::after{
     content: "Started as a";
+    position: absolute;
+    font-size: 1rem;
+    left: 29%;
+    top: -118%;
+    font-weight: 300;
+    width: 100px;
+}
+.explorer::before{
+    content: "{";
+    position: absolute;
+    font-size: 15rem;
+    right: 50%;
+    left: 59%;
+    bottom: -59%;
+    /* transform: translate(50%, -50%); */
+    transform: rotate(90deg);
+    font-weight: 200;
+}
+.explorer::after{
+    content: "Always an";
     position: absolute;
     font-size: 1rem;
     left: 29%;
@@ -56,8 +76,9 @@ img{
 .dev::after{
     content: "Started as a";
     position: absolute;
+    color: #1e1e1e;
     font-size: 1rem;
-    left: 29%;
+    left: 48%;
     bottom: -118%;
     font-weight: 300;
     width: 100px;

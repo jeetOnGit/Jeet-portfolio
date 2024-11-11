@@ -32,35 +32,39 @@ function App() {
       </header>
 
       <main>
-        <div className="container mx-auto max-[520px]:px-2">
-          <section className="heroSection flex flex-col justify-between py-5  text-center">
-            <div className="lightText">
-              <p>Hey folks!</p>
-            </div>
+        <section className="heroSecionWrapper py-9">
+          <div className="container mx-auto max-[520px]:px-2">
+            <div className="heroSection flex flex-col justify-between py-5  text-center">
+              <div className="lightText">
+                <p>Hey folks!</p>
+              </div>
 
-            <div className="heroText py-5">
-              {/* <h2 className="text-[3.5rem] font-semibold">
-                <span className="designer">Designer,</span> <span className="text-[#7B66EE] dev">Frontend Developer</span> & Exploler
-              </h2> */}
-              <img src="images/hero.png" alt="" />
-            </div>
+              <div className="heroText">
+                <h2 className="text-[3.5rem] max-[520px]:text-[1.5rem] font-semibold my-[10%] max-[520px]:my-[4%]">
+                  <span className="designer max-[2000px]:before:hidden max-[2000px]:after:hidden">Designer,</span> <span className="text-[#7B66EE] dev max-[2000px]:before:hidden max-[2000px]:after:hidden">Frontend Developer</span> & <span className="explorer max-[2000px]:before:hidden max-[2000px]:after:hidden">Exploler</span>
+                </h2>
+                {/* <img src="images/hero.png" alt="" /> */}
+              </div>
 
-            <div className="lightText pt-6">
-              <p>
-                For <span className="text-[#7B66EE]">Passionate</span> projects,
-                Let's{" "}
-                <Link
-                  to="https://www.linkedin.com/in/connectwithjeet/"
-                  target="_blank"
-                  className="text-[#7B66EE]"
-                >
-                  connect
-                </Link>
-                {/* <i class="fa-solid fa-right-long" /> */}
-              </p>
+              <div className="lightText">
+                <p>
+                  For <span className="text-[#7B66EE]">Passionate</span> projects,
+                  Let's{" "}
+                  <Link
+                    to="https://www.linkedin.com/in/connectwithjeet/"
+                    target="_blank"
+                    className="text-[#7B66EE]"
+                  >
+                    connect
+                  </Link>
+                  {/* <i class="fa-solid fa-right-long" /> */}
+                </p>
+              </div>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
+        
+          
 
         <section className="aboutSectionWrapper bg-[#1e1e1e] py-9">
           <div className="container mx-auto max-[520px]:px-2">
