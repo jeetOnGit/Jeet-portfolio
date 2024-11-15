@@ -25,11 +25,11 @@ function Projects() {
       usedTools: ["HTML", "CSS", "Javascript", "React"],
     },
     {
-      projectName: "Login Page",
+      projectName: "Url shortner",
       bgImg: "images/demo.PNG",
-      gitLink: "https://github.com/jeetOnGit/sign-up-Page",
-      liveLink: "https://architect-login.netlify.app/",
-      usedTools: ["HTML", "CSS", "Javascript", "React"],
+      gitLink: "https://github.com/jeetOnGit/short-url",
+      liveLink: "https://short-url-frontend-6c0j.onrender.com/",
+      usedTools: ["HTML", "CSS", "Javascript", "React", "Express", "NodeJs"],
     },
     {
       projectName: "Tips Calculator",
