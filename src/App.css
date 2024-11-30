@@ -74,9 +74,9 @@ img{
     font-weight: 200;
 }
 .dev::after{
-    content: "Started as a";
+    content: "Doing";
     position: absolute;
-    color: #1e1e1e;
+    color: #7B66EE;
     font-size: 1rem;
     left: 48%;
     bottom: -118%;
@@ -89,8 +89,25 @@ img{
     background-size: cover;
     background-position: center;
 }
-/* .project{
-    background-image: url('../public/images/demo.jpg');
-    background-repeat: no-repeat;
+
+
+.iFrame:hover{
+    filter: drop-shadow(9px 9px 11px #7B66EE);
 }
- */
+
+.PRbg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../public/images/lines2.png');
+    mask-image: linear-gradient(
+    to bottom,
+    hsl(0 0% 0% / 0),
+    hsl(0 0% 0% / 1) 10%,
+    hsl(0 0% 0% / 1) 90%,
+    hsl(0 0% 0% / 0)
+  );
+}
