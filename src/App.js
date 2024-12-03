@@ -72,23 +72,25 @@ function App() {
             </div>
           </div>
         </section>
+
+          <section className="aboutSectionWrapper bg-[#1e1e1e] py-9 relative">
           
-          <div className="container mx-auto max-[520px]:px-2">
+            <div className="container mx-auto max-[520px]:px-2">
 
-            <div className="aboutSection flex justify-center gap-5 items-center max-[698px]:flex-col max-[698px]:gap-5">
-              <div className="aboutImg w-[300px] h-[400px] bg-[#fff] rounded-lg max-[420px]:w-[150px] max-[420px]:h-[200px] bg-[url('../public/images/aboutImg.jpg')] imgBG"></div>
-              <div className="aboutDesc text-white w-[50%] text-end max-[698px]:text-center  max-[520px]:w-[100%]">
-                <h5 className="font-semibold text-3xl">Hi, this is Jeet Das</h5>
-                <p className="my-5  max-[420px]:text-[0.95rem]">
-                  I'm 19 years old Frontent Developer. Currently Pursuing BCOM from State university. I am curious about my field and exploing the backend technologies like Express, NodeJS and MongoDB.
+              <div className="aboutSection flex justify-center gap-5 items-center max-[698px]:flex-col max-[698px]:gap-5">
+                <div className="aboutImg w-[300px] h-[400px] bg-[#fff] rounded-lg max-[420px]:w-[150px] max-[420px]:h-[200px] bg-[url('../public/images/aboutImg.jpg')] imgBG"></div>
+                <div className="aboutDesc text-white w-[50%] text-end max-[698px]:text-center  max-[520px]:w-[100%]">
+                  <h5 className="font-semibold text-3xl">Hi, this is Jeet Das</h5>
+                  <p className="my-5  max-[420px]:text-[0.95rem]">
+                    I'm 19 years old Frontent Developer. Currently Pursuing BCOM from State university. I am curious about my field and exploing the backend technologies like Express, NodeJS and MongoDB.
                   </p>
-            
-          </div>
-          </div>
-
+              </div>
+            </div>
+            </div>
+          </section>
           <section className="skillsWrapper py-9 relative">
             <div className="projectHeading text-center mb-12">
-              <h2 className="text-[2rem] font-semibold">Skills</h2>
+              <h2 className="text-[2rem] font-semibold">My Skills</h2>
             </div>
             <div className="container mx-auto max-[520px]:px-2">
               <div className="skillContent">
@@ -115,7 +117,7 @@ function App() {
             <Experience />
 
           </section>
-        </div>
+        
         
       </main>
 
