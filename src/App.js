@@ -60,7 +60,7 @@ function App() {
 
               <div className="lightText">
                 <p>
-                  I have bugs but my code doesn’t, Let's <Link
+                  I have bugs, but my code doesn’t, Let's <Link
                     to="https://www.linkedin.com/in/connectwithjeet/"
                     target="_blank"
                     className="text-[#7B66EE]"
