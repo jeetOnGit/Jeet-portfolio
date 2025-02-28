@@ -137,7 +137,7 @@ function App() {
         </div>
         <div className="footerContent pt-5">
           <h5 className="text-center">
-            Thanks for watching
+            Thanks for visiting 
             <i className="fa-solid fa-heart text-[red] ms-1" />
           </h5>
           <div className="socailIcons flex justify-center gap-5 py-9">
