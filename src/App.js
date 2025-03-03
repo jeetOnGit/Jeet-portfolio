@@ -60,7 +60,7 @@ function App() {
 
               <div className="lightText">
                 <p>
-                  I have bugs but my code doesn’t, Let's <Link
+                  I have bugs, but my code doesn’t, Let's <Link
                     to="https://www.linkedin.com/in/connectwithjeet/"
                     target="_blank"
                     className="text-[#7B66EE]"
@@ -137,7 +137,7 @@ function App() {
         </div>
         <div className="footerContent pt-5">
           <h5 className="text-center">
-            Thanks for watching
+            Thanks for visiting 
             <i className="fa-solid fa-heart text-[red] ms-1" />
           </h5>
           <div className="socailIcons flex justify-center gap-5 py-9">
