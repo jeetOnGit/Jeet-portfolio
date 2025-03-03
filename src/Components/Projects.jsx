@@ -11,11 +11,11 @@ function Projects() {
       usedTools: ["HTML", "CSS", "Javascript", "React"],
     },
     {
-      projectName: "Airbnb clone",
+      projectName: "AI Chatbot",
       bgImg: "images/demo.PNG",
-      gitLink: "https://github.com/jeetOnGit/Airbnb",
-      liveLink: "https://airbnb-frontend-0en8.onrender.com/",
-      usedTools: ["HTML", "CSS", "JS", "React", "Express", "NodeJs", "MongoDB"],
+      gitLink: "https://github.com/jeetOnGit/AI_chatbot",
+      liveLink: "https://chataithink.netlify.app/",
+      usedTools: ["HTML", "CSS", "JS", "React"],
     },
     {
       projectName: "TravelGeo",
@@ -60,6 +60,7 @@ function Projects() {
           <iframe title="Website Preview" src={project.liveLink} className="w-[1400px] h-[1000px] scale-[0.3] transform origin-top-left pointer-events-none border-none" frameborder="0"></iframe>
           <div className="overlay absolute w-full h-full top-0 bg-black opacity-[0.9] hidden rounded-lg  group-hover:block">
             <div className="flex flex-col items-center justify-center h-full gap-2">
+              <h2 className="text-white text-[1rem]">{project.projectName}</h2>
             <ul className="flex justify-center items-center gap-5">
               <li>
                 <Link to={project.gitLink} target="_blank">
