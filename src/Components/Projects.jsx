@@ -1,39 +1,39 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import '../App.css'
+import "../App.css";
 function Projects() {
   const projectDetails = [
     {
       projectName: "My Portfolio",
-      bgImg: "images/jeet.PNG",
+      bgImg: "images/avatar.jpg",
       gitLink: "https://github.com/jeetOnGit/Jeet-portfolio",
       liveLink: "https://jeetonweb.netlify.app/",
       usedTools: ["HTML", "CSS", "Javascript", "React"],
     },
     {
       projectName: "AI Chatbot",
-      bgImg: "images/demo.PNG",
+      bgImg: "images/ai.webp",
       gitLink: "https://github.com/jeetOnGit/AI_chatbot",
       liveLink: "https://chataithink.netlify.app/",
       usedTools: ["HTML", "CSS", "JS", "React"],
     },
     {
       projectName: "TravelGeo",
-      bgImg: "images/travel.PNG",
+      bgImg: "images/demoImg.jpg",
       gitLink: "https://github.com/jeetOnGit/travel-Website",
       liveLink: "https://travelgeo.netlify.app/",
       usedTools: ["HTML", "CSS", "Javascript", "React"],
     },
     {
       projectName: "Url shortner",
-      bgImg: "images/demo.PNG",
+      bgImg: "images/url.png",
       gitLink: "https://github.com/jeetOnGit/short-url",
       liveLink: "https://short-url-frontend-6c0j.onrender.com/",
       usedTools: ["HTML", "CSS", "Javascript", "React", "Express", "NodeJs"],
     },
     {
       projectName: "Tips Calculator",
-      bgImg: "images/tips.PNG",
+      bgImg: "images/calc.jpg",
       gitLink: "https://github.com/jeetOnGit/Tip-Calculator",
       liveLink: "https://mytipscalculator.netlify.app/",
       usedTools: ["HTML", "CSS", "Javascript", "React"],
@@ -52,34 +52,45 @@ function Projects() {
       {projectDetails.map((project, index) => (
         <div
           key={index}
-          className="project w-[400px] h-[200px] overflow-hidden bg-[#1e1e1e] rounded-lg border bg-contain max-[520px]:bg-cover relative group bg-no-repeat iFrame"
-          // style={{
-          //   backgroundImage: `url(${project.bgImg})`,
-          // }}
+          className="project relative bg-[#F5EFFF] text-[#1e1e1e] z-10 p-2 border border-[#7B66EE] w-[400px] rounded-lg flex flex-col gap-2"
         >
-          <iframe title="Website Preview" src={project.liveLink} className="w-[1400px] h-[1000px] scale-[0.3] transform origin-top-left pointer-events-none border-none" frameborder="0"></iframe>
-          <div className="overlay absolute w-full h-full top-0 bg-black opacity-[0.9] hidden rounded-lg  group-hover:block">
-            <div className="flex flex-col items-center justify-center h-full gap-2">
-              <h2 className="text-white text-[1rem]">{project.projectName}</h2>
-            <ul className="flex justify-center items-center gap-5">
+          <div>
+            <img className="w-[400px] h-[200px] rounded-lg" src={project.bgImg} alt="" />
+          </div>
+
+          <div>
+            <h3 className="font-bold text-[1.3rem]">{project.projectName}</h3>
+            <p className="text-[0.9rem]">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. At iusto
+              voluptatem qui doloremque, aspernatur quia. Dolorum ad totam
+              dolore architecto?
+            </p>
+          </div>
+
+          <ul className="flex gap-1 flex-wrap ">
+            {project.usedTools.map((tool, index) => (
+              <li
+                className="border border-[#7B66EE] px-3 rounded-sm hover:bg-[#7B66EE] hover:text-white"
+                key={index}
+              >
+                {tool}
+              </li>
+            ))}
+          </ul>
+
+          <div className="icons">
+            <ul className="flex flex-col absolute right-2 bottom-1 gap-1">
               <li>
                 <Link to={project.gitLink} target="_blank">
-                  <i class="fa-brands fa-github text-white text-[1.5rem]" />
+                  <i class="fa-brands fa-github  text-[1.5rem]" />
                 </Link>
               </li>
               <li>
                 <Link to={project.liveLink} target="_blank">
-                  <i class="fa-solid fa-expand text-white text-[1.5rem]"></i>
+                  <i class="fa-regular fa-face-rolling-eyes  text-[1.5rem]"></i>
                 </Link>
               </li>
             </ul>
-            <ul className="flex gap-1 flex-wrap mt-1 justify-center text-white">
-              {project.usedTools.map((tool, index) => (
-                <li className="border border-[#7B66EE] px-3 rounded-full" key={index}>{tool}</li>
-              ))}
-            </ul>
-            </div>
-            
           </div>
         </div>
       ))}
@@ -88,3 +99,4 @@ function Projects() {
 }
 
 export default Projects;
+

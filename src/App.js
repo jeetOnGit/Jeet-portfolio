@@ -163,7 +163,7 @@ function App() {
               <i class="fa-brands fa-github " />
             </Link>
           </div>
-          <h5 className="text-center">Design & Developed by @Jeet das</h5>
+          <h5 className="text-center">Design & Developed by <strong>@Jeet das</strong></h5>
         </div>
       </footer>
     </div>
