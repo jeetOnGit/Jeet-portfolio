@@ -4,10 +4,10 @@ import "../App.css";
 function Projects() {
   const projectDetails = [
     {
-      projectName: "My Portfolio",
-      bgImg: "images/avatar.jpg",
-      gitLink: "https://github.com/jeetOnGit/Jeet-portfolio",
-      liveLink: "https://jeetonweb.netlify.app/",
+      projectName: "Doctoro",
+      bgImg: "images/doctoro.PNG",
+      gitLink: "https://github.com/jeetOnGit/doctoro",
+      liveLink: "https://doctoro.netlify.app/",
       usedTools: ["HTML", "CSS", "Javascript", "React"],
     },
     {
