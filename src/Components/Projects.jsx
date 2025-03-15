@@ -4,11 +4,12 @@ import "../App.css";
 function Projects() {
   const projectDetails = [
     {
-      projectName: "My Portfolio",
-      bgImg: "images/avatar.jpg",
-      gitLink: "https://github.com/jeetOnGit/Jeet-portfolio",
-      liveLink: "https://jeetonweb.netlify.app/",
+      projectName: "Doctoro",
+      bgImg: "images/doctoro.PNG",
+      gitLink: "https://github.com/jeetOnGit/doctoro",
+      liveLink: "https://doctoro.netlify.app/",
       usedTools: ["HTML", "CSS", "Javascript", "React"],
+      desc: "A platform allowing users to browse doctor profiles, read reviews, and easily book appointments with trusted healthcare providers online."
     },
     {
       projectName: "AI Chatbot",
@@ -16,6 +17,7 @@ function Projects() {
       gitLink: "https://github.com/jeetOnGit/AI_chatbot",
       liveLink: "https://chataithink.netlify.app/",
       usedTools: ["HTML", "CSS", "JS", "React"],
+      desc: "A website to interact with Gemini's AI, offering intelligent, real-time conversations for inquiries, assistance, and fun chats."
     },
     {
       projectName: "TravelGeo",
@@ -23,6 +25,7 @@ function Projects() {
       gitLink: "https://github.com/jeetOnGit/travel-Website",
       liveLink: "https://travelgeo.netlify.app/",
       usedTools: ["HTML", "CSS", "Javascript", "React"],
+      desc: " A travel guide offering detailed information on popular destinations, including attractions, tips, and advice for travelers worldwide."
     },
     {
       projectName: "Url shortner",
@@ -30,6 +33,7 @@ function Projects() {
       gitLink: "https://github.com/jeetOnGit/short-url",
       liveLink: "https://short-url-frontend-6c0j.onrender.com/",
       usedTools: ["HTML", "CSS", "Javascript", "React", "Express", "NodeJs"],
+      desc: "A MERN stack application that shortens long URLs, providing easy-to-share, compact links while preserving the original destination."
     },
     {
       projectName: "Tips Calculator",
@@ -37,6 +41,7 @@ function Projects() {
       gitLink: "https://github.com/jeetOnGit/Tip-Calculator",
       liveLink: "https://mytipscalculator.netlify.app/",
       usedTools: ["HTML", "CSS", "Javascript", "React"],
+      desc: " A tool that calculates tip amounts based on the total bill and desired percentage, simplifying tipping for users."
     },
     {
       projectName: "Custom Password",
@@ -44,6 +49,7 @@ function Projects() {
       gitLink: "https://github.com/jeetOnGit/Password-generator",
       liveLink: "https://make-own-password.netlify.app/",
       usedTools: ["HTML", "CSS", "Javascript", "React"],
+      desc: "A secure password generator allowing users to create personalized, strong passwords with custom length and complexity options."
     },
   ];
 
@@ -61,9 +67,7 @@ function Projects() {
           <div>
             <h3 className="font-bold text-[1.3rem]">{project.projectName}</h3>
             <p className="text-[0.9rem]">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. At iusto
-              voluptatem qui doloremque, aspernatur quia. Dolorum ad totam
-              dolore architecto?
+             {project.desc}
             </p>
           </div>
 
