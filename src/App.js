@@ -142,7 +142,7 @@ function App() {
           </h5>
           <div className="socailIcons flex justify-center gap-5 py-9">
             <Link
-              to="https://www.instagram.com/jeetdas709/"
+              to="https://www.instagram.com/jeet_o_comic?igsh=OXR1MDZ2dTNyeGgz"
               target="_blank"
               className="text-[1.4rem] p-3 rounded-full hover:text-[#7B66EE]"
             >
