@@ -22,7 +22,7 @@ function App() {
               </h5>
 
               <Button className="hover:bg-[#7B66EE] hover:text-white">
-                <Link to="mailto:jeetdas.in@gmail.com" target="_blank">
+                <Link to="mailto:contactwithjeeet@gmail.com" target="_blank">
                   Say Hii!
                 </Link>
               </Button>
