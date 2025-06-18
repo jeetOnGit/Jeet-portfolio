@@ -8,7 +8,7 @@ function Projects() {
       bgImg: "images/doctoro.PNG",
       gitLink: "https://github.com/jeetOnGit/doctoro",
       liveLink: "https://doctoro.netlify.app/",
-      usedTools: ["HTML", "CSS", "Javascript", "React"],
+      usedTools: ["React", "Express", "NodeJs", "MongoDB"],
       desc: "A platform allowing users to browse doctor profiles, read reviews, and easily book appointments with trusted healthcare providers online."
     },
     {
@@ -16,7 +16,7 @@ function Projects() {
       bgImg: "images/ai.webp",
       gitLink: "https://github.com/jeetOnGit/AI_chatbot",
       liveLink: "https://chataithink.netlify.app/",
-      usedTools: ["HTML", "CSS", "JS", "React"],
+      usedTools: ["React", "Gemini API"],
       desc: "A website to interact with Gemini's AI, offering intelligent, real-time conversations for inquiries, assistance, and fun chats."
     },
     {
@@ -24,7 +24,7 @@ function Projects() {
       bgImg: "images/demoImg.jpg",
       gitLink: "https://github.com/jeetOnGit/travel-Website",
       liveLink: "https://travelgeo.netlify.app/",
-      usedTools: ["HTML", "CSS", "Javascript", "React"],
+      usedTools: ["React"],
       desc: " A travel guide offering detailed information on popular destinations, including attractions, tips, and advice for travelers worldwide."
     },
     {
@@ -32,7 +32,7 @@ function Projects() {
       bgImg: "images/url.png",
       gitLink: "https://github.com/jeetOnGit/short-url",
       liveLink: "https://short-url-frontend-6c0j.onrender.com/",
-      usedTools: ["HTML", "CSS", "Javascript", "React", "Express", "NodeJs"],
+      usedTools: ["React", "Express", "NodeJs", "MongoDB"],
       desc: "A MERN stack application that shortens long URLs, providing easy-to-share, compact links while preserving the original destination."
     },
     {
@@ -40,7 +40,7 @@ function Projects() {
       bgImg: "images/calc.jpg",
       gitLink: "https://github.com/jeetOnGit/Tip-Calculator",
       liveLink: "https://mytipscalculator.netlify.app/",
-      usedTools: ["HTML", "CSS", "Javascript", "React"],
+      usedTools: ["React"],
       desc: " A tool that calculates tip amounts based on the total bill and desired percentage, simplifying tipping for users."
     },
     {
@@ -48,7 +48,7 @@ function Projects() {
       bgImg: "images/password.PNG",
       gitLink: "https://github.com/jeetOnGit/Password-generator",
       liveLink: "https://make-own-password.netlify.app/",
-      usedTools: ["HTML", "CSS", "Javascript", "React"],
+      usedTools: ["React"],
       desc: "A secure password generator allowing users to create personalized, strong passwords with custom length and complexity options."
     },
   ];
@@ -71,7 +71,7 @@ function Projects() {
             </p>
           </div>
 
-          <ul className="flex gap-1 flex-wrap ">
+          <ul className="flex gap-1 flex-wrap">
             {project.usedTools.map((tool, index) => (
               <li
                 className="border border-[#7B66EE] px-3 rounded-sm hover:bg-[#7B66EE] hover:text-white"
@@ -83,15 +83,15 @@ function Projects() {
           </ul>
 
           <div className="icons">
-            <ul className="flex flex-col absolute right-2 bottom-1 gap-1">
+            <ul className="flex flex-col absolute right-2 top-3 gap-1">
               <li>
                 <Link to={project.gitLink} target="_blank">
-                  <i class="fa-brands fa-github  text-[1.5rem]" />
+                  <i class="fa-brands fa-github  text-[1.5rem] text-white" />
                 </Link>
               </li>
               <li>
                 <Link to={project.liveLink} target="_blank">
-                  <i class="fa-regular fa-face-rolling-eyes  text-[1.5rem]"></i>
+                  <i class="fa-regular fa-face-rolling-eyes  text-[1.5rem] text-white"></i>
                 </Link>
               </li>
             </ul>

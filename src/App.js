@@ -42,18 +42,17 @@ function App() {
               <div className="heroText">
                 <h2 className="text-[3.5rem] max-[520px]:text-[1.5rem] font-semibold my-[10%] max-[520px]:my-[4%]">
 
-                  <span className="designer max-[1300px]:before:hidden max-[1300px]:after:hidden">
-                    Designer,
+                  <span className="designer max-[1300px]:before:hidden max-[1300px]:after:hidden me-1">
+                    Designer, 
                   </span>
-                  <span className="text-[#7B66EE] dev max-[1300px]:before:hidden max-[1300px]:after:hidden">
+                  <span className="text-[#7B66EE] dev max-[1300px]:before:hidden max-[1300px]:after:hidden me-1">
                     Frontend Developer
                   </span>
-                  &
-                  <span className="explorer max-[1300px]:before:hidden max-[1300px]:after:hidden">
-                    Explorer
+                   &
+                  <span className="explorer max-[1300px]:before:hidden max-[1300px]:after:hidden ms-1">
+                     Explorer
                   </span>
 
-                  {/* <span className="designer max-[1300px]:before:hidden max-[1300px]:after:hidden">Designer,</span> <span className="text-[#7B66EE] dev max-[1300px]:before:hidden max-[1300px]:after:hidden">Frontend Developer</span> & <span className="explorer max-[1300px]:before:hidden max-[1300px]:after:hidden">Exploler</span> */}
 
                 </h2>
               </div>
@@ -82,7 +81,7 @@ function App() {
                 <div className="aboutDesc text-white w-[50%] text-end max-[698px]:text-center  max-[520px]:w-[100%]">
                   <h5 className="font-semibold text-3xl">Hi, this is Jeet Das</h5>
                   <p className="my-5  max-[420px]:text-[0.95rem]">
-                    I'm 19 years old Frontent Developer. Currently Pursuing BCOM from State university. I am curious about my field and exploing the backend technologies like Express, NodeJS and MongoDB.
+                    I'm 20 years old Frontent Developer. Currently Pursuing B.COM from State university. I am curious about my field and exploing the backend technologies like Express, NodeJS and MongoDB.
                   </p>
               </div>
             </div>
@@ -106,7 +105,7 @@ function App() {
                 <h2 className="text-[2rem] font-semibold">Projects</h2>
               </div>
 
-              <div className="porjects flex justify-between flex-wrap py-9 gap-6 max-[678px]:justify-center max-[678px]:gap-3 max-[998px]:justify-center">
+              <div className="porjects flex justify-between flex-wrap py-9 gap-6 max-[678px]:justify-center max-[678px]:gap-3 max-[998px]:justify-center max-[420px]:gap-5">
                 <Projects />
               </div>
             </div>
@@ -124,7 +123,7 @@ function App() {
       <footer className="bg-[#1e1e1e] py-10 text-white relative">
         <div className="floatingDiv w-[60%] bg-[#7B66EE] px-6 absolute flex justify-around items-center py-7 rounded-lg left-1/2 -translate-x-1/2 top-[-20%] max-[998px]:w-[80%] max-[520px]:py-4 max-[520px]:top-[-14%]">
           <h3 className="text-[1.4rem] me-5 max-[998px]:text-[1.1rem] max-[520px]:text-[0.75rem]">
-            Want to discuss for next project?
+            Let's Build Together
           </h3>
           <Button className="border border-[#fff] hover:bg-[#1e1e1e] max-[520px]:px-2 max-[520px]:text-[0.75rem]">
             <Link
@@ -163,7 +162,7 @@ function App() {
               <i class="fa-brands fa-github " />
             </Link>
           </div>
-          <h5 className="text-center">Design & Developed by <strong>@Jeet das</strong></h5>
+          <h5 className="text-center">Designed & Developed by <strong>@Jeet das</strong></h5>
         </div>
       </footer>
     </div>
