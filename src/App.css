@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,7 +16,7 @@ img{
     background-color: blanchedalmond;
     border-radius: 50%;
     /* background-image: url(../public/images/pp.jpg); */
-    background-size: cover;
+    /* background-size: cover;
 }
 .designer, .dev, .explorer{
     position: relative;
@@ -29,7 +29,7 @@ img{
     left: 53%;
     bottom: -59%;
     /* transform: translate(50%, -50%); */
-    transform: rotate(90deg);
+    /* transform: rotate(90deg);
     font-weight: 200;
 }
 .designer::after{
@@ -48,7 +48,7 @@ img{
     right: 50%;
     left: 59%;
     bottom: -59%;
-    /* transform: translate(50%, -50%); */
+    /* transform: translate(50%, -50%); 
     transform: rotate(90deg);
     font-weight: 200;
 }
@@ -85,7 +85,7 @@ img{
 }
 
 .aboutImg{
-    /* background-image: url('../public/images/aboutImg.jpg'); */
+    /* background-image: url('../public/images/aboutImg.jpg'); 
     background-size: cover;
     background-position: center;
 }
@@ -110,4 +110,50 @@ img{
     hsl(0 0% 0% / 1) 90%,
     hsl(0 0% 0% / 0)
   );
+}  */
+
+body {
+    font-family: 'Fira Code', monospace;
+    background-color: #0d1117;
+    color: #00ff00;
+    line-height: 1.6;
+    overflow-x: hidden;
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath d='M0 0h16v16H0z' fill='none'/%3E%3Cpath d='M8 1L0 8l8 7V1zm-1 8L3 8l4-3v6z' fill='white'/%3E%3C/svg%3E") 8 8, auto;
+}
+/* Typing animation for hero heading */
+.typing-effect::after {
+    content: '|';
+    display: inline-block;
+    animation: blink-caret 0.75s step-end infinite;
+}
+@keyframes blink-caret {
+    from, to { color: transparent; }
+    50% { color: #00ff00; }
+}
+/* Glow animation for terminal container */
+.terminal-glow {
+    animation: terminal-glow 1.5s infinite alternate;
+}
+@keyframes terminal-glow {
+    from { box-shadow: 0 0 5px rgba(0, 255, 0, 0.2); }
+    to { box-shadow: 0 0 15px rgba(0, 255, 0, 0.5); }
+}
+/* Photo pulse animation */
+.photo-pulse {
+    animation: photo-pulse 2s infinite alternate;
+}
+@keyframes photo-pulse {
+    from { box-shadow: 0 0 5px #00ff00, 0 0 10px rgba(0, 255, 0, 0.3); }
+    to { box-shadow: 0 0 15px #00ff00, 0 0 25px rgba(0, 255, 0, 0.5); }
+}
+/* Fix for scrollbar in terminal output */
+.terminal-output::-webkit-scrollbar {
+    width: 8px;
+}
+.terminal-output::-webkit-scrollbar-track {
+    background: #1e293b;
+}
+.terminal-output::-webkit-scrollbar-thumb {
+    background-color: #00ff00;
+    border-radius: 4px;
 }
