@@ -1,4 +1,4 @@
-/* *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,8 +15,8 @@ img{
     height: 50px;
     background-color: blanchedalmond;
     border-radius: 50%;
-    /* background-image: url(../public/images/pp.jpg); */
-    /* background-size: cover;
+background-image: url(../public/images/pp.jpg);
+     background-size: cover;
 }
 .designer, .dev, .explorer{
     position: relative;
@@ -28,8 +28,8 @@ img{
     right: 50%;
     left: 53%;
     bottom: -59%;
-    /* transform: translate(50%, -50%); */
-    /* transform: rotate(90deg);
+    transform: translate(50%, -50%); 
+    transform: rotate(90deg);
     font-weight: 200;
 }
 .designer::after{
@@ -48,7 +48,7 @@ img{
     right: 50%;
     left: 59%;
     bottom: -59%;
-    /* transform: translate(50%, -50%); 
+    transform: translate(50%, -50%); 
     transform: rotate(90deg);
     font-weight: 200;
 }
@@ -85,7 +85,7 @@ img{
 }
 
 .aboutImg{
-    /* background-image: url('../public/images/aboutImg.jpg'); 
+    background-image: url('../public/images/aboutImg.jpg'); 
     background-size: cover;
     background-position: center;
 }
@@ -110,16 +110,15 @@ img{
     hsl(0 0% 0% / 1) 90%,
     hsl(0 0% 0% / 0)
   );
-}  */
+}  
 
-body {
+/* body {
     font-family: 'Fira Code', monospace;
     background-color: #0d1117;
-    color: #00ff00;
+    color: #000;
     line-height: 1.6;
     overflow-x: hidden;
-    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath d='M0 0h16v16H0z' fill='none'/%3E%3Cpath d='M8 1L0 8l8 7V1zm-1 8L3 8l4-3v6z' fill='white'/%3E%3C/svg%3E") 8 8, auto;
-}
+} */
 /* Typing animation for hero heading */
 .typing-effect::after {
     content: '|';
