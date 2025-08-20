@@ -12,19 +12,24 @@ function Experience() {
   
         </div>
         <div className="timelineContent flex flex-col gap-6 w-full max-[520px]:ms-2">
+          <div className="experienceBox w-[40%] text-right self-end max-[520px]:w-full max-[520px]:text-start">
+            <h5 className="text-[1.25rem] font-semibold">Freelance Developer</h5>
+            <p className="italic text-[0.75rem] py-2">Full-time | Present</p>
+            <p className="">
+              Built multiple websites for individuals and organisations. Last project was an event organising site.
+            </p>
+          </div>
           <div className="experienceBox w-[40%] max-[520px]:w-full">
             <h5 className="text-[1.25rem] font-semibold">Graphic Designer</h5>
             <p className="italic text-[0.75rem] py-2">
               Cherry Media | Jul 2023 – Jul 2024
             </p>
             <p className="">
-              I developed portfolio websites using HTML, CSS, and React. Created
-              and edited video content for YouTube, enhancing engagement.
-              Designed social media graphics, improving brand presence.
+              I developed portfolio websites using HTML, CSS, and React with team. Edited video content for YouTube. Designed social media graphics, improving brand presence.
             </p>
           </div>
           <div className="experienceBox w-[40%] text-right self-end max-[520px]:w-full max-[520px]:text-start">
-            <h5 className="text-[1.25rem] font-semibold">Freelancer</h5>
+            <h5 className="text-[1.25rem] font-semibold">Freelance Designer</h5>
             <p className="italic text-[0.75rem] py-2">Part-time</p>
             <p className="">
               I was a part time Graphic Designer and worked with multiple brands

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Github,  FileText, Link, } from 'lucide-react';
+import { Github, FileText, Link, } from 'lucide-react';
 
 const Terminal = () => {
   // --- State and Refs ---
@@ -69,13 +69,33 @@ const Terminal = () => {
         </p>
       </>
     ),
-    'cat resume.txt': () => (
-      <>
-        <p className="text-prompt-text">user@system:~$</p>
-        <p className="text-slate-200 flex items-center space-x-2"><FileText />Retrieving resume...</p>
-        <p><a href="docs/jeet-resume.pdf" target="_blank" rel="noopener noreferrer" className="hover:underline text-prompt-text">Click here to view my resume.</a></p>
-      </>
-    ),
+    cat: (arg = "") => {
+      if (arg === "resume.txt") {
+        return (
+          <>
+            <p className="text-prompt-text">user@system:~$</p>
+            <p className="text-slate-200 flex items-center space-x-2">
+              <FileText /> Retrieving resume...
+            </p>
+            <p>
+              <a
+                href="/docs/Jeet-resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline text-prompt-text"
+              >
+                Click here to view my resume.
+              </a>
+            </p>
+          </>
+        );
+      }
+      return (
+        <span className="text-red-400">
+          Usage: <span className="text-prompt-text">cat resume.txt</span>
+        </span>
+      );
+    },
     'contact-info': () => (
       <>
         <p className="text-prompt-text">user@system:~$</p>
@@ -205,7 +225,7 @@ const Terminal = () => {
       </style>
 
       <main className="pt-20">
-        
+
 
         <section id="terminal" className="mx-auto p-4 md:p-12  border-2 border-primary-color bg-card-bg shadow-lg rounded-md terminal-glow max-w-5xl">
           <h2 className="text-xl md:text-2xl font-bold mb-6">
@@ -242,7 +262,7 @@ const Terminal = () => {
 
       </main>
 
-     
+
     </div>
   );
 };

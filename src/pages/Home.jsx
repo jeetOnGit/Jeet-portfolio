@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom'
-import React from 'react'
+// import { Link } from 'react-router-dom'
+import React, { useLayoutEffect } from 'react'
 // import Projects from "../Components/Projects";
 import Skills from "../Components/Skills";
 import Experience from "../Components/Experience";
@@ -7,6 +7,10 @@ import Experience from "../Components/Experience";
 import Terminal from '../Components/Terminal'
 
 const Home = () => {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="App text-[#1e1e1e] bg-white">
       <header>
@@ -17,15 +21,17 @@ const Home = () => {
             </div>
             <div className="quickAction flex items-center gap-6">
               <h5 className="hover:text-[#7B66EE] hover:cursor-pointer">
-                <Link to="/terminal">
+                <a href="#projects" onClick={() =>
+                  document.getElementById("projects").scrollIntoView({ behavior: "smooth" })
+                }>
                   Terminal
-                </Link>
+                </a>
               </h5>
 
               <h5 className="hover:text-[#7B66EE] hover:cursor-pointer">
-                <Link to="docs/Jeet-resume.pdf" target="_blank" download>
+                <a href="docs/Jeet-resume.pdf" target="_blank" download>
                   Resume
-                </Link>
+                </a>
               </h5>
 
               {/* <Button className="hover:bg-[#7B66EE] hover:text-white">
@@ -34,10 +40,10 @@ const Home = () => {
                 </Link>
               </Button> */}
 
-              <Link
-                to="mailto:contactwithjeeet@gmail.com" className="hover:bg-[#7B66EE] hover:text-white py-2 px-6 border rounded-full" >
+              <a
+                href="https://www.linkedin.com/in/connectwithjeet/" className="hover:bg-[#7B66EE] hover:text-white py-2 px-6 border rounded-full" >
                 Say Hii!
-              </Link>
+              </a>
             </div>
           </nav>
         </div>
@@ -69,12 +75,13 @@ const Home = () => {
               <div className="lightText">
                 <p>
                   I have bugs, but my code doesn’t, Let's{" "}
-                  <Link
-                    to="https://www.linkedin.com/in/connectwithjeet/"
+                  <a
+                    href="https://www.linkedin.com/in/connectwithjeet/"
                     target="_blank"
+                    rel='noreferrer'
                     className="text-[#7B66EE]">
                     connect
-                  </Link>
+                  </a>
                 </p>
               </div>
             </div>
@@ -96,7 +103,7 @@ const Home = () => {
                   interactive digital experiences.
                 </p>
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-                  Skilled in React, JavaScript, and Tailwind CSS, I’m constantly learning
+                 I’m constantly learning
                   new technologies and improving my design sense to deliver polished,
                   performant solutions.
                 </p>
@@ -106,11 +113,17 @@ const Home = () => {
                   <a
                     href="#projects"
                     className="px-5 py-2 rounded-xl bg-indigo-500 text-white hover:bg-indigo-600 transition"
+                    onClick={() =>
+                      document.getElementById("projects").scrollIntoView({ behavior: "smooth" })
+                    }
                   >
                     View Projects
                   </a>
                   <a
                     href="#contact"
+                    onClick={() =>
+                      document.getElementById("contact").scrollIntoView({ behavior: "smooth" })
+                    }
                     className="px-5 py-2 rounded-xl border border-gray-400 dark:border-gray-600 text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 transition"
                   >
                     Contact Me
@@ -136,14 +149,14 @@ const Home = () => {
         </section>
 
         <section id='projects' className="projectSectionWrapper relative">
-          {/* <div className="PRbg"></div> */}
+          {/* <div className="PRbg"></div>  */}
           <div className="container mx-auto max-[520px]:px-2">
             <div className="projectHeading text-center">
               <h2 className="text-[2rem] font-semibold">Projects</h2>
             </div>
 
             <div className="porjects flex justify-between flex-wrap  gap-6 max-[678px]:justify-center max-[678px]:gap-3 max-[998px]:justify-center max-[420px]:gap-5">
-              {/* <Projects /> */}
+
               <Terminal />
             </div>
           </div>
@@ -160,14 +173,14 @@ const Home = () => {
             Let's Build Together
           </h3>
 
-          <Link
-          className="border py-2 px-5 rounded-full border-[#fff] hover:bg-[#1e1e1e] max-[520px]:px-2 max-[520px]:text-[0.75rem]"
-            to="https://www.linkedin.com/in/connectwithjeet/"
-            target="_blank">
-            
-              Connect
-            
-          </Link>
+          <a
+            className="border py-2 px-5 rounded-full border-[#fff] hover:bg-[#1e1e1e] max-[520px]:px-2 max-[520px]:text-[0.75rem]"
+            href="https://www.linkedin.com/in/connectwithjeet/"
+            target="_blank" rel='noreferrer'>
+
+            Connect
+
+          </a>
         </div>
         <div className="footerContent pt-5">
           <h5 className="text-center">
@@ -175,24 +188,27 @@ const Home = () => {
             <i className="fa-solid fa-heart text-[red] ms-1" />
           </h5>
           <div className="socailIcons flex justify-center gap-5 py-9">
-            <Link
-              to="https://www.instagram.com/jeet_o_comic?igsh=OXR1MDZ2dTNyeGgz"
+            <a
+              href="https://www.instagram.com/jeet_o_comic?igsh=OXR1MDZ2dTNyeGgz"
               target="_blank"
+              rel='noreferrer'
               className="text-[1.4rem] p-3 rounded-full hover:text-[#7B66EE]">
-              <i class="fa-brands fa-instagram " />
-            </Link>
-            <Link
-              to="https://www.linkedin.com/in/connectwithjeet/"
+              <i className="fa-brands fa-instagram " />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/connectwithjeet/"
               target="_blank"
+              rel='noreferrer'
               className="text-[1.4rem] p-3 rounded-full hover:text-[#7B66EE]">
-              <i class="fa-brands fa-linkedin-in" />
-            </Link>
-            <Link
-              to="https://github.com/jeetOnGit"
+              <i className="fa-brands fa-linkedin-in" />
+            </a>
+            <a
+              href="https://github.com/jeetOnGit"
               target="_blank"
+              rel='noreferrer'
               className="text-[1.4rem] p-3 rounded-full hover:text-[#7B66EE]">
-              <i class="fa-brands fa-github " />
-            </Link>
+              <i className="fa-brands fa-github " />
+            </a>
           </div>
           <h5 className="text-center">
             Designed & Developed by <strong>@Jeet das</strong>
