@@ -7,6 +7,7 @@ import Experience from "../Components/Experience";
 import Terminal from '../Components/Terminal'
 
 const Home = () => {
+  
   useLayoutEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -74,7 +75,7 @@ const Home = () => {
 
               <div className="lightText">
                 <p>
-                  I have bugs, but my code doesn’t, Let's{" "}
+                  I have bugs, but my code doesn’t, Let's
                   <a
                     href="https://www.linkedin.com/in/connectwithjeet/"
                     target="_blank"

@@ -52,12 +52,12 @@ const Terminal = () => {
           <Github className="text-prompt-text" /><a href="https://github.com/jeetOnGit/doctoro" target="_blank" rel="noopener noreferrer" className="hover:underline text-prompt-text">GitHub</a>
         </p>
         <br />
-        <p><span className="text-prompt-text">AI Chatbot</span></p>
-        <p className="text-slate-200">./exec An AI powered chatbot with Gimini API</p>
-        <p className="text-sm text-slate-400">Tech Stack: React, Gemini API</p>
+        <p><span className="text-prompt-text">Library Management System</span></p>
+        <p className="text-slate-200">./exec A library system for students who wants a hassle free book renting process. A full-stack real world project totally from scratch.</p>
+        <p className="text-sm text-slate-400">Tech Stack: MongoDB, Express, React & NodeJS</p>
         <p className="flex items-center space-x-2">
-          <Link className="text-prompt-text" /><a href="https://chataithink.netlify.app/" target="_blank" rel="noopener noreferrer" className="hover:underline text-prompt-text">Live Demo</a>
-          <Github className="text-prompt-text" /><a href="https://github.com/jeetOnGit/AI_chatbot" target="_blank" rel="noopener noreferrer" className="hover:underline text-prompt-text">GitHub</a>
+          <Link className="text-prompt-text" /><a href="https://easyibrary.netlify.app/" target="_blank" rel="noopener noreferrer" className="hover:underline text-prompt-text">Live Demo</a>
+          <Github className="text-prompt-text" /><a href="https://github.com/jeetOnGit/Library-manager/" target="_blank" rel="noopener noreferrer" className="hover:underline text-prompt-text">GitHub</a>
         </p>
         <br />
         <p><span className="text-prompt-text">Custom Password</span></p>
