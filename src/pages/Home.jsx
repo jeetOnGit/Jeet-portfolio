@@ -75,14 +75,14 @@ const Home = () => {
 
               <div className="lightText">
                 <p>
-                  I have bugs, but my code doesn’t, Let's
-                  <a
-                    href="https://www.linkedin.com/in/connectwithjeet/"
-                    target="_blank"
-                    rel='noreferrer'
-                    className="text-[#7B66EE]">
-                    connect
-                  </a>
+                  I have bugs, but my code doesn’t, Let's 
+                    <a
+                      href="https://www.linkedin.com/in/connectwithjeet/"
+                      target="_blank"
+                      rel='noreferrer'
+                      className="text-[#7B66EE] ps-1">
+                      connect
+                    </a>
                 </p>
               </div>
             </div>

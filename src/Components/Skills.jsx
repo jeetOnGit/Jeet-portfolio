@@ -2,9 +2,6 @@ import React from "react";
 import './skill.css'
 function Skills() {
   const skillsArr = [
-    "HTML",
-    "CSS",
-    "Javascript",
     "SCSS",
     "Bootstrap",
     "Tailwind",
@@ -16,8 +13,8 @@ function Skills() {
     "NodeJS",
     "Figma",
     "Wordpress",
+    "NextJs",
     "Photoshop",
-    "Illustrator",
   ];
   return (
     <>
