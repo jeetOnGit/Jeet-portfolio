@@ -64,11 +64,11 @@ const Home = () => {
                     Designer,
                   </span>
                   <span className="text-[#7B66EE] dev max-[1300px]:before:hidden max-[1300px]:after:hidden me-1">
-                    Frontend Developer
+                    FullStack Developer
                   </span>
                   &
                   <span className="explorer max-[1300px]:before:hidden max-[1300px]:after:hidden ms-1">
-                    Explorer
+                    Learner
                   </span>
                 </h2>
               </div>
