@@ -234,7 +234,7 @@ const Home = () => {
         </section>
       </main>
 
-      <footer id="contact" className="dark:bg-gray-900 py-10 text-white relative">
+      <footer id="contact" className="bg-gray-900 py-10 text-white relative">
         <div className="floatingDiv w-[60%] bg-[#7B66EE] px-6 absolute flex justify-around items-center py-7 rounded-lg left-1/2 -translate-x-1/2 top-[-20%] max-[998px]:w-[80%] max-[520px]:py-4 max-[520px]:top-[-14%]">
           <h3 className="text-[1.4rem] me-5 max-[998px]:text-[1.1rem] max-[520px]:text-[0.75rem]">
             Let's Build Together
